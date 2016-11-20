@@ -1,1 +1,19 @@
 console.log('Loaded!');
+
+//Counter code
+var button = document.getElementById('counter');
+
+button.onclick = function() {
+    var request = new XMLHtpRequest();
+    request.onreadystatechange=function() {
+        if(request.readyState === XMLHttpsRequest.DONE) {
+            if(request.Status === 200) {
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
+            }
+        }
+    };
+    request.open('GET','http://yashmunoth.imad.hasura-app.io',true);
+    request.send(null);
+};
