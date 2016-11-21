@@ -20,14 +20,14 @@ button.onclick = function() {
 
 function loadLoginForm () {
     var loginHtml = `
-        <h3>First register, then login</h3>
+        <h3>First register, then login and enjoy the feature of commenting on my article</h3>
         <input type="text" id="username" placeholder="Username" />
         <input type="password" id="password"  placeholder="Password"/>
         <br/><br/>
         <input type="submit" id="login_btn" value="Login" />
         <input type="submit" id="register_btn" value="Register" />
         <br/><br/>
-        After logging in, your session will expire only after 30 days, isn't this cool!
+        After logging in, your session will expire only after 30 days if you don't logout, isn't this cool!
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
 
