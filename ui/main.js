@@ -26,7 +26,7 @@ function loadLoginForm () {
         <br/><br/>
         <input type="submit" id="login_btn" value="Login" />
         <input type="submit" id="register_btn" value="Register" />
-        <br/>
+        <br/><br/>
         After logging in, your session will expire in 30 days, isn't this cool!
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
